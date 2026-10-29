@@ -211,7 +211,7 @@ with tab_cotizar:
             st.markdown(f"- Accesorios: ${res['costo_accesorios']:,.2f}")
             st.markdown(f"- Mano de Obra: ${res['costo_mano_obra']:,.2f}")
 
-        st.info(f"### Subtotal: ${res['subtotal']:,.2f}  |  IVA (21%): ${res['iva']:,.2f}  \vert{}  TOTAL:${res['total']:,.2f}")
+       st.info(f"### Subtotal: ${res['subtotal']:,.2f}  |  IVA (21%): ${res['iva']:,.2f}  |  TOTAL: ${res['total']:,.2f}")
 
         # Función para generar PDF en memoria
         def generar_pdf_bytes(incluir_desglose=True):
